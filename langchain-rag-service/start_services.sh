@@ -13,7 +13,7 @@ if [ -z "$FASTAPI_LANGCHAIN_PORT" ]; then
 fi
 
 echo "Starting Ollama server in background..."
-nohup ollama serve > ollama.log 2>&1 &
+nohup OLLAMA_LOAD_TIMEOUT=20m ollama serve > ollama.log 2>&1 &
 
 # Save PID to a file
 echo $! > ollama.pid
