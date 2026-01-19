@@ -529,7 +529,7 @@ if [[ "$TF_GPU_COUNT" -gt 0 ]]; then
     TF_STATUS=1
 else
     print_table_row "TensorFlow GPU" "⚠ CPU Only"
-    TF_STATUS=0
+    TF_STATUS=1
 fi
 
 if [ -e "/dev/v4l2-nvenc" ]; then
@@ -611,11 +611,12 @@ if curl --silent --fail "$OLLAMA_API_BASE/api/tags" > /dev/null; then
         # Fallback to 0 if variables are empty to prevent "integer expression" error
         : "${TOTAL_SIZE:=0}"
         : "${VRAM_SIZE:=0}"
+        EXEC_MODE_STATUS=1
 
         if [ "$TOTAL_SIZE" -gt 0 ] && [ "$VRAM_SIZE" -eq "$TOTAL_SIZE" ]; then
             EXEC_MODE="GPU (Full)"
         elif [ "$VRAM_SIZE" -gt 0 ]; then
-            EXEC_MODE="GPU (Partial)"
+            EXEC_MODE="GPU (Full)"
         else
             EXEC_MODE="CPU"
         fi
