@@ -131,7 +131,7 @@ def quantize_model(f16_path):
     run(cmd)
     return quant_output
 
-if name == "__main__":
+if __name__ == "__main__":
     Path(output_dir).mkdir(parents=True, exist_ok=True)
 
     print("Downloading HuggingFace model...")
