@@ -236,7 +236,7 @@ cd Deepseek-R1-1.5B-Langchain-AI-Agent-RAG-on-NVIDIA-Jetson
 Before starting services, upload your PDF documents (or use the default one) to the designated directory:
 ```
 # Place your PDFs in the following directory
-./langchain-rag-service/pdfs/
+./langchain-service/pdfs/
 ```
 
 ### Build and Launch the Container
