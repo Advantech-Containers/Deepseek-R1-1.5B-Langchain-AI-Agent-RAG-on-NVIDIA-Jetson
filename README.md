@@ -96,7 +96,7 @@ Deepseek-R1-1.5B-Langchain-AI-Agent-RAG-on-NVIDIA-Jetson/
 | Deepseek-R1-1.5B-Langchain-AI-Agent-RAG-on-NVIDIA-Jetson | Provides a hardware-accelerated development environment using various AI software components along with Deepseek R1 1.5B, Ollama, Langchain, Vector DB & RAG sample, which could be extended to further use case development |
 | openweb-ui-service            | Optional, provides UI which is accessible via browser for inferencing                                                                                                                                                     |
 
-### Deepseek-R1 1.5B Langchain AI Agent (RAG) on NVIDIA Jetson Container Highlights
+### Deepseek-R1 1.5B Langchain AI Agent (RAG) on NVIDIA Jetson™  Container Highlights
 
 This container leverages [**LangChain**](https://www.langchain.com/) as the core orchestration framework for building powerful, modular LLM applications directly on NVIDIA Jetson™ devices. It integrates with the local inference engine Ollama, enabling offline, edge-optimized AI workflows without relying on cloud services.
 
@@ -233,7 +233,7 @@ Before starting, please ensure that the readme sections `Best Practices for Docu
 ### Clone Repository
 ```
 # Clone the repository
-git clone https://github.com/Advantech-EdgeSync-Containers/Deepseek-R1-1.5B-Langchain-AI-Agent-RAG-on-NVIDIA-Jetson.git
+git clone https://github.com/Advantech-Containers/Deepseek-R1-1.5B-Langchain-AI-Agent-RAG-on-NVIDIA-Jetson.git
 cd Deepseek-R1-1.5B-Langchain-AI-Agent-RAG-on-NVIDIA-Jetson
 ```
 
